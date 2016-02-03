@@ -12,20 +12,24 @@
 	<dict>
 		<key>55072946E3DE02DC0C0E3C1AA906B0576133F601</key>
 		<string>https://bitbucket.org/sahilgargin/audiopitchios.git</string>
+		<key>DA4875145628C18FE57037EA5133329BA7F212B7</key>
+		<string>https://github.com/sahilgargin/pitchPerfect.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Audio Pitch.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>55072946E3DE02DC0C0E3C1AA906B0576133F601</key>
+		<string>../../../audiopitchios</string>
+		<key>DA4875145628C18FE57037EA5133329BA7F212B7</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/sahilgargin/audiopitchios.git</string>
+	<string>https://github.com/sahilgargin/pitchPerfect.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>55072946E3DE02DC0C0E3C1AA906B0576133F601</string>
+	<string>DA4875145628C18FE57037EA5133329BA7F212B7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>55072946E3DE02DC0C0E3C1AA906B0576133F601</string>
 			<key>IDESourceControlWCCName</key>
 			<string>audiopitchios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DA4875145628C18FE57037EA5133329BA7F212B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pitchPerfect</string>
 		</dict>
 	</array>
 </dict>
