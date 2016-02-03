@@ -16,53 +16,21 @@ class PlaySoundsViewController: UIViewController {
     var audioEngine:AVAudioEngine!
     var audioFile:AVAudioFile!
 
-    
-    func playAudioRates(rate:Float)
-    {
-        audioPlayer.stop()
-        audioPlayer.rate = rate
-        audioPlayer.currentTime = 0.0
-        audioPlayer.play()
-    }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        /*if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-        
-            var filePathUrl = NSURL.fileURLWithPath(filePath)
-            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
-            audioPlayer.enableRate = true
-        }
-        else
-        {
-            println("file not found")
-        }*/
-        
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayer.enableRate = true
         audioEngine = AVAudioEngine()
         audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl,error: nil)
-    
         
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
     
     @IBAction func playSlowAudio(sender: UIButton) {
         playAudioRates(0.5)
@@ -86,6 +54,16 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopAllSound(sender: AnyObject) {
         audioPlayer.stop()
         audioEngine.stop()
+    }
+    
+    
+    func playAudioRates(rate:Float)
+    {
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioPlayer.rate = rate
+        audioPlayer.currentTime = 0.0
+        audioPlayer.play()
     }
     
     func playAudioWithVariablePitch(pitch: Float){

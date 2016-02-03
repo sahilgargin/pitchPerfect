@@ -15,6 +15,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     //Declared Globally
 
 
+    @IBOutlet weak var recordPressText: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var recordText: UILabel!
     @IBOutlet weak var stopButton: UIButton!
@@ -30,6 +31,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(animated: Bool) {
         stopButton.hidden = true
         recordButton.enabled = true
+        recordPressText.hidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +43,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func recordAudio(sender: UIButton) {
         stopButton.hidden = false
         recordText.hidden = false
+        recordPressText.hidden = true
         recordButton.enabled = false
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         
