@@ -42,7 +42,7 @@
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hlf-rQ-h9y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Tap to Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHH-gS-xqW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHH-gS-xqW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                 <color key="textColor" red="0.1019607843" green="0.21176470589999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,13 +51,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="UHH-gS-xqW" firstAttribute="top" secondItem="BJ5-Lq-PdU" secondAttribute="bottom" constant="16" id="4Vl-tv-zss"/>
                             <constraint firstAttribute="centerY" secondItem="4hu-8z-R4z" secondAttribute="centerY" constant="4" id="51P-iV-7qg"/>
                             <constraint firstAttribute="centerX" secondItem="BJ5-Lq-PdU" secondAttribute="centerX" constant="-0.5" id="856-6F-0ek"/>
                             <constraint firstItem="vcg-Vq-06L" firstAttribute="top" secondItem="BJ5-Lq-PdU" secondAttribute="bottom" constant="152" id="Eq5-uE-p8R"/>
-                            <constraint firstItem="UHH-gS-xqW" firstAttribute="top" secondItem="4hu-8z-R4z" secondAttribute="bottom" constant="48" id="TL4-TC-Am7"/>
+                            <constraint firstAttribute="centerX" secondItem="UHH-gS-xqW" secondAttribute="centerX" constant="1.5" id="Wdo-t1-4b0"/>
                             <constraint firstItem="BJ5-Lq-PdU" firstAttribute="top" secondItem="4hu-8z-R4z" secondAttribute="bottom" constant="16" id="Wsd-eV-dlL"/>
-                            <constraint firstItem="UHH-gS-xqW" firstAttribute="top" secondItem="BJ5-Lq-PdU" secondAttribute="bottom" constant="17" id="Xec-f7-wJE"/>
-                            <constraint firstAttribute="centerX" secondItem="UHH-gS-xqW" secondAttribute="centerX" constant="10.5" id="eXT-1e-MIU"/>
                             <constraint firstAttribute="centerX" secondItem="vcg-Vq-06L" secondAttribute="centerX" id="pD9-GJ-kBd"/>
                             <constraint firstAttribute="centerX" secondItem="4hu-8z-R4z" secondAttribute="centerX" id="sVV-iQ-XaN"/>
                         </constraints>
@@ -73,9 +72,8 @@
                                 <exclude reference="sVV-iQ-XaN"/>
                                 <exclude reference="856-6F-0ek"/>
                                 <exclude reference="Wsd-eV-dlL"/>
-                                <exclude reference="TL4-TC-Am7"/>
-                                <exclude reference="Xec-f7-wJE"/>
-                                <exclude reference="eXT-1e-MIU"/>
+                                <exclude reference="4Vl-tv-zss"/>
+                                <exclude reference="Wdo-t1-4b0"/>
                                 <exclude reference="Eq5-uE-p8R"/>
                                 <exclude reference="pD9-GJ-kBd"/>
                             </mask>
@@ -92,9 +90,8 @@
                                 <include reference="sVV-iQ-XaN"/>
                                 <include reference="856-6F-0ek"/>
                                 <include reference="Wsd-eV-dlL"/>
-                                <include reference="TL4-TC-Am7"/>
-                                <include reference="Xec-f7-wJE"/>
-                                <include reference="eXT-1e-MIU"/>
+                                <include reference="4Vl-tv-zss"/>
+                                <include reference="Wdo-t1-4b0"/>
                                 <include reference="Eq5-uE-p8R"/>
                                 <include reference="pD9-GJ-kBd"/>
                             </mask>
